@@ -112,8 +112,8 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 ```
 NAME:BHARATH.K
 REG NO:212222110006
-```
-```
+
+
 #include "main.h"
 #include"stdbool.h"
 #include "stdio.h"
