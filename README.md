@@ -79,7 +79,6 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 <img height=20% width=40% src="https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png">
 
 9. use project and build all 
-<img height=20% width=40% src="https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png">
 10. once the project is bulild 
 <img height=20% width=40% src="https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png">
 
