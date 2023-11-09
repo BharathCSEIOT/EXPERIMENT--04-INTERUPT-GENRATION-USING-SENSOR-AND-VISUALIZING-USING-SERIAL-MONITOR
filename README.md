@@ -23,7 +23,7 @@ An IR sensor has two small LED indicators – one for power, which is ON the ent
 ON (Active) when it detects an object
 OFF (Inactive) when it doesn’t detect any object
 
-![image](https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/9bf61298-1deb-48d7-b88f-bd08e3cc6a83)
+<img height=50% width=40% src="https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/9bf61298-1deb-48d7-b88f-bd08e3cc6a83">
 Now that we have a little idea about its works, let’s take a look at how to interface it with evive and see it in action.
 
 Connect VCC pin to the +5V pin on evive.
@@ -37,7 +37,7 @@ Interrupts are asynchronous (i.e. can happen anytime) events that disrupt the no
 
 With interrupt, we do not need to continuously check the state of the digital input pin. When an interrupt occurs (a change is detected), the processor stops the execution of the main program and a function is called upon known as ISR or the Interrupt Service Routine. The processor then temporarily works on a different task (ISR) and then gets back to the main program after the handling routine has ended.
 
-![image](https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/cb4ac7aa-30ed-4b97-b3b4-1986db9f1558)
+<img height=50% width=40% src="https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/cb4ac7aa-30ed-4b97-b3b4-1986db9f1558">
 The STM32 ARM microcontroller interrupts are generated in the following manner:
 
 The system runs the ISR and then goes back to the main program. The NVIC and EXTI are configured. The Interrupt Service Routine (ISR) also known as the interrupt service routine handler is defined to enable the external interrupts.
@@ -51,17 +51,17 @@ The STM32 ARM microcontroller features 23 event sources which are divided into t
 The diagram below shows how the GPIO pins are connected to the 16 interrupt lines:
 ## Procedure:
  1. click on STM 32 CUBE IDE, the following screen will appear 
- ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
+<img height=20% width=40% src="https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png">
 
  2. click on FILE, click on new stm 32 project 
- ![image](https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png)
-![image](https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png)
+<img height=70% width=60% src="https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png">
+<img height=70% width=60% src="https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png">
 3. select the target to be programmed  as shown below and click on next 
 
-![image](https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png)
+<img height=70% width=60% src="https://user-images.githubusercontent.com/36288975/226189280-ed5dcf1d-dd8d-43ae-815d-491085f4863b.png">
 
 4.select the program name 
-![image](https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png)
+<img height=70% width=60% src="https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png">
 
 
 5. corresponding ioc file will be generated automatically 
@@ -79,9 +79,9 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 ![image](https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png)
 
 9. use project and build all 
-![image](https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png)
+<img height=50% width=40% src="https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png">
 10. once the project is bulild 
-![image](https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png)
+<img height=50% width=40% src="https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png">
 
 11. click on debug option 
 ![image](https://user-images.githubusercontent.com/36288975/226189625-37daa9a3-62e9-42b5-a5ce-2ac63345905b.png)
@@ -89,8 +89,6 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 12. connect the  iot board to power supply and usb 
 
 13. After connecting open the STM cube programmer 
-![image](https://user-images.githubusercontent.com/36288975/227599356-9c465b7e-6bd0-436b-b4e8-742ed25e06ce.png)
-
 14. click on UART and click on connect 
 ![image](https://user-images.githubusercontent.com/36288975/227599458-26976d4a-f2d4-49f0-a49f-31f46eb15761.png)
 
@@ -114,6 +112,8 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 ```
 NAME:BHARATH.K
 REG NO:212222110006
+```
+```
 #include "main.h"
 #include"stdbool.h"
 #include "stdio.h"
@@ -233,14 +233,14 @@ void assert_failed(uint8_t *file, uint32_t line)
 ```
 ## Output screen shots of serial port utility   :
  
- ![278817416-13d46b0d-2b81-421e-a0bb-7d1d25285452](https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/2986bf50-e470-4d7c-854e-784172ac106b)
-![278817423-dc9c56f5-31c2-4334-8d37-5a317e96eced](https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/b51d407b-4819-4dd6-be4d-850cc51d75b7)
+<img height=50% width=40% src="https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/2986bf50-e470-4d7c-854e-784172ac106b">
+<img height=50% width=40% src="https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/b51d407b-4819-4dd6-be4d-850cc51d75b7">
 
  ## Circuit board :
  
- ![278817469-5b06cb7c-852e-41b9-8f1c-54f11f71c813](https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/99057061-5908-4a6c-a14e-51507f582ecf)
+<img height=50% width=40% src="https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/99057061-5908-4a6c-a14e-51507f582ecf">
 
- ![278817492-af1883e2-f93d-4011-98d6-41f3262e6b4f](https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/33bee7a1-d3a4-47fe-b69c-46aa5ef7c771)
+<img height=50% width=40% src="https://github.com/BharathCSEIOT/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/122793480/33bee7a1-d3a4-47fe-b69c-46aa5ef7c771">
 
 ## Result :
 Interfacing a  IR SENSOR and interrupt is generated using external interrupt mode , visualized on serial port 
